@@ -1,66 +1,204 @@
 <!doctype html>
 <html class="no-js" lang="">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>freshtest</title>
-
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
-
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/materialize/bin/materialize.css" />
+    <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
     <!-- endbower -->
     <!-- endbuild -->
-
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
-  </head>
-  <body>
+</head>
+
+<body>
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
     <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Logo</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
-      </ul>
+        <div class="nav-wrapper black"> <a href="index.html" class="brand-logo center" id="logo">Dillon Fosa</a> <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#works">WORKS</a></li>
+                <li><a href="#resume">RESUME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="#works">WORKS</a></li>
+                <li><a href="#resume">RESUME</a></li>
+                <li><a href="about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--NAV END-->
+    <div id="hero">
+        <div class="container" id="hero-text-container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="page">
+                        <div id="home-news">
+                            <div class="home_header"> <strong>hello,</strong> <span>looking for a Web Designer?</span> </div>
+                            <div class="home_header"> <strong>Love</strong> <span>clean responsive design? </span> </div>
+                            <div class="home_header"> <span>See my work</span> <strong>here.</strong> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 ctas ">
+                    <div class="center-align"> <a href="#works" class=" waves-effect waves-light btn btn btn-large black works-btn animated slideInLeft" id="works">VIEW WORKS</a> <a href="#works" class=" waves-effect waves btn btn btn-large  white grey-text works-btn animated slideInRight" id="resume">VIEW RESUME</a> </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </nav>
-   
+    <div class="dotbg">
+        <br>
+        <div class="row">
+            <div class=" col s12 m12 l12 center-align"> <a href="#works"><i class="fa fa-chevron-down fa-2x downarrow" aria-hidden="true"></i></a> </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <h3 class="center-align animated slideInDown">MY WORK</h3>
+                    <hr> </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m4 l4">
+                    <div class="card z-depth-2 wow slideInUp" data-wow-duration="1s" data-wow-delay="1s">
+                        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/code-img.jpeg"> </div>
+                        <div class="card-content"> <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            <p class=""><a href="#">View Website</a></p>
+                        </div>
+                        <div class="card-reveal"> <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4">
+                    <div class="card z-depth-2 wow slideInUp" data-wow-duration="1s" data-wow-delay="1.5s">
+                        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/code-img.jpeg"> </div>
+                        <div class="card-content"> <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">View Website</a></p>
+                        </div>
+                        <div class="card-reveal"> <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4">
+                    <div class="card z-depth-2 wow slideInUp" data-wow-duration="1s" data-wow-delay="2s">
+                        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/code-img.jpeg"> </div>
+                        <div class="card-content"> <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">View Website</a></p>
+                        </div>
+                        <div class="card-reveal"> <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m4 l4 ">
+                    <div class="card z-depth-2 wow slideInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/code-img.jpeg"> </div>
+                        <div class="card-content"> <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">View Website</a></p>
+                        </div>
+                        <div class="card-reveal"> <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4">
+                    <div class="card z-depth-2 wow slideInUp" data-wow-duration="1s" data-wow-delay=".8s">
+                        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/code-img.jpeg"> </div>
+                        <div class="card-content"> <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">View Website</a></p>
+                        </div>
+                        <div class="card-reveal"> <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4">
+                    <div class="card z-depth-2 wow slideInUp" data-wow-duration="1s" data-wow-delay="1s">
+                        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/code-img.jpeg"> </div>
+                        <div class="card-content"> <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">View Website</a></p>
+                        </div>
+                        <div class="card-reveal"> <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
+   <div class="container">
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <h3 class="center-align wow slideInUp" data-wow-duration="1s" data-wow-delay="2s">RESUME</h3>
+            <hr> </div>
+                
+    </div>
+    
+    <div class="row">
+        <div class="col s12 m12 l12">
+            
+            
+            
+        </div>
+    </div>
+</div>
+    
+    
+     
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
+        (function (b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] = function () {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = 'https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
     </script>
-
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/materialize/bin/materialize.js"></script>
+    <script src="/bower_components/d3/d3.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-    
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <!-- endbuild -->
-  </body>
+</body>
+
 </html>
