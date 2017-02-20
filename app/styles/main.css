@@ -12,29 +12,48 @@ body {
 }
 
 
+nav ul a {
+    transition: background-color .3s;
+    font-size: .8rem;
+
+}
 
 .nav-wrapper li a{
     
     color: #ffffff;
 }
 
-.nav-wrapper li a:last-child {
-    margin-right: 20px;
+.nav-wrapper  li a:active {
+    
+    color: #ffffff;
+    text-decoration: underline;
+    
 }
 
 .nav-wrapper li a:hover{
     
     color: #3e7ce5;
     text-decoration: underline;
-    
 }
 
+
+.nav-wrapper li a:last-child {
+    margin-right: 20px;
+}
+
+nav ul li a.active {
+    color: #538def;
+    text-decoration: underline;
+    font-size: 1em
+    
+}
 
 #hero {
     background-position: center center;
     height: 400px;
     background-size: cover;
     background-image: url(../images/blue-bg.png);
+    
 }
 
 .works-btn{
@@ -93,6 +112,10 @@ hr {
 .dotbg{
     background-image: url(../images/subtle_dots_@2X.png);
     
+}
+
+.wht-bg{
+    background-color: white;
 }
 
 
@@ -206,8 +229,8 @@ div.line {
 	text-align:center;
 	text-transform:uppercase;
 	color:#464646;
-	height: 40px;
-	line-height: 20px;
+	height: 42px;
+	line-height: 22px;
 	overflow:hidden;
 	position:relative;
 }.home_header {
@@ -235,6 +258,8 @@ div.line {
     
     .side-nav li a{
         color: black;
+        font-size: 16px;
+        text-align: center;
     }
 }
     
