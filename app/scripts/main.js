@@ -2,7 +2,7 @@ $( document ).ready(function(){
     
     $('.button-collapse').sideNav();
     
-    
+     new WOW().init();
   
 });
 
@@ -25,54 +25,66 @@ $(window).load(function() {
    switchClass(-1);
 });
 
+$('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+});
 
 
-function draw(data) {
-  d3.select('body')
-    .append('div')
-      .attr('class','chart')
-    .selectAll('div.line')
-    .data(data)
-    .enter()
-    .append('div')
-      .attr('class','line');
+$(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+     
+
+
+
+
+
+var data = [16695, 18533];
+
+var bar_w = 55,
+    bar_h = 250,
+    label_padding = 26,
+    bar_padding = 25;
   
-  //Create Label for each line item
-  d3.selectAll('div.line')
-    .append('div')
-      .attr('class', 'label')
-      .text(function(d){return d.name;});
+var x = d3.scale.linear()
+      .domain([0, 1])
+      .range([0, bar_w + bar_padding]);
   
-  //Show bar for each line item
-  d3.selectAll('div.line')
-    .append('div')
-      .attr('class', 'bar')
-      .transition().ease('elastic')
-      .style('width', function(d){return d.mpg * 10 + 'px';})
-      .text(function(d){return d.mpg;}); 
-}
+var y = d3.scale.linear()
+       .domain([0, d3.max(data)])
+       .rangeRound([0, bar_h - label_padding]); // rangeRound to avoid antialiasing artifacts.
 
+var chart = d3.select("#chart").append("svg")
+     .attr("class", "chart")
+     .attr("width", (bar_w * data.length) + bar_padding)
+     .attr("height", bar_h);
 
-var data = [{
-    class: 'skills',
-    name: 'HTML5',
-    mpg: 37
-},{
-    class: 'skills',
-    name: 'CSS3',
-    mpg: 37
-},{
-    class: 'skills',
-    name: 'PHP',
-    mpg: 50
-},{
-    class: 'SKILLS',
-    name: 'JQUERY',
-    mpg: 43
-},{    
-    class: 'SKILLS',
-    name: 'JAVA-SCRIPT',
-    mpg: 35
-}];
+chart.selectAll("rect")
+ .data(data)
+ .enter()
+ .append("rect")
+ .attr("x", function(d, i) { return x(i) - .5; })
+ .attr("y", function(d) { return bar_h - .5; })
+ .attr("width", bar_w)
+ .attr("class", function(d,i) {return i==0?'first':'second'})
+ .transition().delay(function (d,i){ return i * 600;})
+ .duration(800)
+ .attr("height", function(d) { return y(d); })
+ .attr("y", function(d) { return bar_h - y(d) - .5; });
 
-draw(data);
+chart.selectAll("text")
+ .data(data)
+ .enter().append("text")
+ .attr("width", bar_w)
+ .attr("x", function(d, i) { return x(i) + bar_w/2; })
+ .attr("y", function(d) { return bar_h - y(d) - 15; })
+ .attr("text-anchor", "middle")
+ .transition().delay(function (d,i){ return i * 600;})
+ .duration(800)
+ .text(function(d) { return '$' + d; });

@@ -17,7 +17,9 @@
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- build:css styles/main.css -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
+    <link href="/bower_components/font-awesome/css/font-awesome.css" rel="stylesheet">
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
@@ -37,7 +39,7 @@
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
-                <li><a href="#works">WORKS</a></li>
+                <li><a  class="active" href="#works">WORKS</a></li>
                 <li><a href="#resume">RESUME</a></li>
                 <li><a href="about">ABOUT</a></li>
                 <li><a href="#contact">CONTACT</a></li>
@@ -53,14 +55,14 @@
                         <div id="home-news">
                             <div class="home_header"> <strong>hello,</strong> <span>looking for a ui/ux Designer?</span> </div>
                             <div class="home_header"> <strong>Love</strong> <span>clean responsive design? </span> </div>
-                            <div class="home_header"> <span>See my work</span> <strong>here.</strong> </div>
+                            <div class="home_header"> <span>Lets, work</span> <strong>together!</strong> </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col s12 ctas ">
-                    <div class="center-align"> <a href="#works" class=" waves-effect waves-light btn btn btn-large black works-btn animated slideInLeft" id="works">VIEW WORKS</a> <a href="#works" class=" waves-effect waves btn btn btn-large  white grey-text works-btn animated slideInRight" id="resume">VIEW RESUME</a> </div>
+                    <div class="center-align"> <a href="#works" class=" waves-effect waves-light btn btn btn-large black works-btn animated slideInLeft">VIEW WORKS</a> <a href="#resume" class=" waves-effect waves btn btn btn-large  white grey-text works-btn animated slideInRight">VIEW RESUME</a> </div>
                 </div>
             </div>
         </div>
@@ -68,97 +70,120 @@
     <div class="dotbg">
         <br>
         <div class="row">
-            <div class=" col s12 m12 l12 center-align"> <a href="#works"><i class="fa fa-chevron-down fa-2x downarrow" aria-hidden="true"></i></a> </div>
+            <div class=" col s12 m12 l12 center-align"> <a href="!#"><i class="fa fa-chevron-down fa-2x downarrow" aria-hidden="true"></i></a> </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col s12 m12 l12">
-                    <h3 class="center-align animated slideInDown">MY WORK</h3>
-                    <hr> </div>
+                    <h3 class="center-align wow slideInDown main" id="works">MY WORK</h3>
+                    <hr class="center-align wow slideInLeft" data-wow-duration=".8s" data-wow-delay=".2s"> </div>
             </div>
             <div class="row">
                 <div class="col s12 m4 l4">
-                    <div class="card z-depth-2 wow slideInUp" data-wow-duration="1s" data-wow-delay="1s">
-                        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/code-img.jpeg"> </div>
-                        <div class="card-content"> <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                            <p class=""><a href="#">View Website</a></p>
+                    <div class=" hoverable card z-depth-2 wow slideInUp" data-wow-duration="1s" data-wow-delay="1s">
+                        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/Utopian-Hotels-home-thumbnail.png" height="250"> </div>
+                        <div class="card-content"> <span class="card-title activator grey-text text-darken-4">Utopian Hotels<i class="material-icons right">more_vert</i></span>
+                            <p class=""><a href="#">View Details</a></p>
                         </div>
-                        <div class="card-reveal"> <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <div class="card-reveal"> <span class="card-title grey-text text-darken-4">Utopian Hotels<i class="material-icons right">close</i></span>
+                            <p>Utopian Hotels was a project to show case a high-end luxury hotel company. This site uses HTML5, CSS3, JQUERY AND PHP. This site was designed using a responisve mobile first layout.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4">
+                    <div class=" hoverable card z-depth-2 wow slideInUp" data-wow-duration="1s" data-wow-delay="1.5s">
+                        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/trkd-tek1.png" height="250" alt="Trkd-tek.com website thumbnail"> </div>
+                        <div class="card-content"> <span class="card-title activator grey-text text-darken-4">TRKD-TEK<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">View Details</a></p>
+                        </div>
+                        <div class="card-reveal"> <span class="card-title grey-text text-darken-4">TRKD-TEK<i class="material-icons right">close</i></span>
                             <p>Here is some more information about this product that is only revealed once clicked on.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col s12 m4 l4">
-                    <div class="card z-depth-2 wow slideInUp" data-wow-duration="1s" data-wow-delay="1.5s">
-                        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/code-img.jpeg"> </div>
-                        <div class="card-content"> <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                    <div class=" hoverable card z-depth-2 wow slideInUp" data-wow-duration="1s" data-wow-delay="2s">
+                        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/Rareandthrifted-home.png" height="250" alt="Rareandthrifted website"> </div>
+                        <div class="card-content"> <span class="card-title activator grey-text text-darken-4">Rare and Thrifted<i class="material-icons right">more_vert</i></span>
                             <p><a href="#">View Website</a></p>
                         </div>
-                        <div class="card-reveal"> <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m4 l4">
-                    <div class="card z-depth-2 wow slideInUp" data-wow-duration="1s" data-wow-delay="2s">
-                        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/code-img.jpeg"> </div>
-                        <div class="card-content"> <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                            <p><a href="#">View Website</a></p>
-                        </div>
-                        <div class="card-reveal"> <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <div class="card-reveal"> <span class="card-title grey-text text-darken-4">Rare and Thrifted<i class="material-icons right">close</i></span>
                             <p>Here is some more information about this product that is only revealed once clicked on.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col s12 m4 l4 ">
-                    <div class="card z-depth-2 wow slideInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/code-img.jpeg"> </div>
-                        <div class="card-content"> <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                            <p><a href="#">View Website</a></p>
-                        </div>
-                        <div class="card-reveal"> <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m4 l4">
-                    <div class="card z-depth-2 wow slideInUp" data-wow-duration="1s" data-wow-delay=".8s">
-                        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/code-img.jpeg"> </div>
-                        <div class="card-content"> <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                            <p><a href="#">View Website</a></p>
-                        </div>
-                        <div class="card-reveal"> <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m4 l4">
-                    <div class="card z-depth-2 wow slideInUp" data-wow-duration="1s" data-wow-delay="1s">
-                        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/code-img.jpeg"> </div>
-                        <div class="card-content"> <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                            <p><a href="#">View Website</a></p>
-                        </div>
-                        <div class="card-reveal"> <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           
         </div>
     </div>
     <div class="wht-bg">
         <div class="container">
             <div class="row">
                 <div class="col s12 m12 l12">
-                    <h3 class="center-align wow slideInUp" data-wow-duration="1s" data-wow-delay="1.5s">RESUME</h3>
-                    <hr class="center-align wow slideInLeft" data-wow-duration="1.2s" data-wow-delay="1.2s"> </div>
+                    <h3 class="center-align wow slideInUp" data-wow-duration="1s" data-wow-delay="1s" id="resume">RESUME</h3>
+                    <hr class="center-align wow slideInLeft" data-wow-duration=".8s" data-wow-delay=".5s"> </div>
             </div>
             <div class="row">
-                <div class="col s12 m12 l12"> </div>
+               <div class="col s12 m6 l6">
+                   <div class="skills-section">
+                      <h5 class="center-align wow slideInLeft"  data-wow-duration="1.5s" data-wow-duration="1.5s">SKILLS</h5>
+                       <ul>
+                           <li class="center-align">HTML5</li>
+                           <li class="center-align">CSS3</li>
+                           <li class="center-align">JQUERY</li>
+                           <li class="center-align">PHP</li>
+                           <li class="center-align">UX/UI</li>
+                       </ul>
+                   </div>
+                   
+               </div>
+                <div class="col s12 m6 l6">
+                   <div class="skills-section">
+                      <h5 class="center-align wow slideInRight"  data-wow-duration="1.5s" data-wow-duration="1.5s">Graph should below</h5>
+                       
+                   </div>
+                   
+                   <div id="chart"></div>
+                   
+               </div>
             </div>
-        </div>
+            <div class="row">
+                <div class="col s12 m6 l6" >
+                 <h5 class="center-align wow slideInLeft"  data-wow-duration="1.6s" data-wow-duration="1.6s">Education</h5>
+            
+                  <ul class="collapsible wow slideInUp"  data-wow-duration="1.8s" data-wow-duration="1.8s" data-collapsible="accordion">
+                    <li>
+                      <div class="collapsible-header active"><i class="material-icons">filter_drama</i>Education</div>
+                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">place</i>Accomplishments</div>
+                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">whatshot</i>Work Experience</div>
+                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col s12 m6 l6" >
+                  <h5 class="center-align wow slideInRight"  data-wow-duration="2.3s" data-wow-duration="2.3s">Accomplishments</h5>
+                  <ul class="collapsible wow slideInUp"  data-wow-duration="2s" data-wow-duration="2s" data-collapsible="accordion">
+                    <li>
+                      <div class="collapsible-header active"><i class="material-icons">filter_drama</i>Accomplishments</div>
+                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">place</i>Accomplishments</div>
+                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">whatshot</i>Work Experience</div>
+                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                  </ul>
+                </div>
+        </div>    
     </div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -187,9 +212,6 @@
     <!-- endbuild -->
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
-    <script>
-        new WOW().init();
-    </script>
     <!-- endbuild -->
 </body>
 

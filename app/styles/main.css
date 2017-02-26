@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik');
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -5,9 +8,12 @@
   padding: 0.2em 0;
 }
 
+html{
+    height: 2000px;
+}
 body {
   background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Rubik', sans-serif;
   color: #333;
 }
 
@@ -23,12 +29,6 @@ nav ul a {
     color: #ffffff;
 }
 
-.nav-wrapper  li a:active {
-    
-    color: #ffffff;
-    text-decoration: underline;
-    
-}
 
 .nav-wrapper li a:hover{
     
@@ -44,7 +44,6 @@ nav ul a {
 nav ul li a.active {
     color: #538def;
     text-decoration: underline;
-    font-size: 1em
     
 }
 
@@ -71,14 +70,23 @@ nav ul li a.active {
     
 }
 
+
+
 h3{
     font-size: 52px;
+    font-family: 'Rubik', sans-serif;
 }
 
 hr {
 
     width: 320px;
     border-color: #0089ec;
+}
+
+
+a{
+    font-size: 12px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .card .card-title {
@@ -93,7 +101,8 @@ hr {
 }
 
 .card .card-content {
-    padding: 15px;
+    padding: 10px;
+    background-color: rgba(206, 206, 206, 0.76);
    
 }
 
@@ -108,7 +117,17 @@ hr {
     top: 0;
     bottom: 0;
     width: 100%;
+	height: 250px;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
+
+.card .card-image img:hover {
+
+
+    
+}
+
 .dotbg{
     background-image: url(../images/subtle_dots_@2X.png);
     
@@ -119,44 +138,9 @@ hr {
 }
 
 
-div.chart {
-  margin: auto;
-  width:550px;
-  padding: 0.6em 0.6em 0 0.6em; 
-  font: italic small-caps normal 13px sans-serif;
-  
+.group {
+    cursor: pointer;
 }
-.bar {
-  padding: 2px;
-  background-color: #508aed;
-  color: #fff;
-  height: 18px;
-  text-align: right;
-  transition: width 0.5s ease-out; 
-  box-shadow: 2px 2px 2px #666;
-}
-.bar:hover {
-  background-color: #28b;
-}
-
-div.label {
-  float: left;
-  width: 10em;
-  text-align: right;
-  background-color: rgb(200,200,200);
-  padding: 2px; 
-  cursor: default;
-  border-right: 1px solid #666;
-  padding-right: 15px;
-}
-div.line {
-  height: 2.5em;
-}
-
-
-
-
-
 
 
 
@@ -260,8 +244,33 @@ div.line {
         color: black;
         font-size: 16px;
         text-align: center;
-    }
+    }    
+    
 }
     
 
+
+
+
+.chart rect {
+  stroke: white;
+  fill: steelblue;
+}
+
+.chart text {
+  font: 13px sans-serif;
+  fill: red;
+}
+
+.chart rect.first {
+  stroke: none;
+  fill: #f69525;
+}
+
+.chart rect.second {
+  font: 10px sans-serif;
+  color: black;
+  stroke: none;
+  fill: #0f71b7;
+}
 
