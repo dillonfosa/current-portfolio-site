@@ -124,17 +124,19 @@ a{
 
 .card .card-image img:hover {
 
-
+transform: scale(1.1);
     
 }
 
 .dotbg{
     background-image: url(../images/subtle_dots_@2X.png);
+  
     
 }
 
 .wht-bg{
     background-color: white;
+    margin-top: -20px;
 }
 
 
@@ -229,14 +231,6 @@ a{
 
 
 
-
-
-
-
-
-
-
-
 /* SLIDE OUT NAV*/
 @media only screen and (max-width: 992px){
     
@@ -249,28 +243,14 @@ a{
 }
     
 
+/* d3 chart*/
 
-
-
-.chart rect {
-  stroke: white;
-  fill: steelblue;
+.pie {
+margin: 15px;
 }
 
-.chart text {
-  font: 13px sans-serif;
-  fill: red;
+.pie text{
+  font-size: 1em;
+  font-family: "Verdana";
+  fill: #888;
 }
-
-.chart rect.first {
-  stroke: none;
-  fill: #f69525;
-}
-
-.chart rect.second {
-  font: 10px sans-serif;
-  color: black;
-  stroke: none;
-  fill: #0f71b7;
-}
-

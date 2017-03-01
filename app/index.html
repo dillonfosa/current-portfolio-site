@@ -19,7 +19,8 @@
     <!-- build:css styles/main.css -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
-    <link href="/bower_components/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
@@ -70,7 +71,7 @@
     <div class="dotbg">
         <br>
         <div class="row">
-            <div class=" col s12 m12 l12 center-align"> <a href="!#"><i class="fa fa-chevron-down fa-2x downarrow" aria-hidden="true"></i></a> </div>
+            <div class=" col s12 m12 l12 center-align animated fadeInDown"> <a href="#resume"><i class="fa fa-chevron-down fa-2x downarrow" aria-hidden="true"></i></a> </div>
         </div>
         <div class="container">
             <div class="row">
@@ -120,71 +121,75 @@
         <div class="container">
             <div class="row">
                 <div class="col s12 m12 l12">
-                    <h3 class="center-align wow slideInUp" data-wow-duration="1s" data-wow-delay="1s" id="resume">RESUME</h3>
-                    <hr class="center-align wow slideInLeft" data-wow-duration=".8s" data-wow-delay=".5s"> </div>
+                    <h3 class="center-align wow slideInUp" data-wow-duration=".8s" data-wow-delay=".5s" id="resume">RESUME</h3>
+                    <hr class="center-align wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s"> </div>
             </div>
             <div class="row">
-               <div class="col s12 m6 l6">
+               <div class="col s12 m12 l12">
                    <div class="skills-section">
-                      <h5 class="center-align wow slideInLeft"  data-wow-duration="1.5s" data-wow-duration="1.5s">SKILLS</h5>
-                       <ul>
-                           <li class="center-align">HTML5</li>
-                           <li class="center-align">CSS3</li>
-                           <li class="center-align">JQUERY</li>
-                           <li class="center-align">PHP</li>
-                           <li class="center-align">UX/UI</li>
+                      <h5 class="center-align wow slideInUp"  data-wow-duration="1.5s" data-wow-duration="1.5s">SKILLS</h5>
+                       <ul class="wow fadeInDown" data-wow-duration="3s" data-wow-duration="3s">
+                           <li class="center-align">Clean Design</li>
+                           <li class="center-align">User-centered</li>
+                           <li class="center-align">Responsive</li>
+                           
                        </ul>
                    </div>
-                   
+                </div>   
                </div>
-                <div class="col s12 m6 l6">
-                   <div class="skills-section">
-                      <h5 class="center-align wow slideInRight"  data-wow-duration="1.5s" data-wow-duration="1.5s">Graph should below</h5>
-                       
-                   </div>
+                <div class="row">
+                <div class="col s12 m12 l12">
                    
-                   <div id="chart"></div>
+                   <div class="center-align wow slideInUp" data-wow-duration="1s" data-wow-delay="1s" id="chart"></div>
                    
                </div>
             </div>
+           
             <div class="row">
                 <div class="col s12 m6 l6" >
                  <h5 class="center-align wow slideInLeft"  data-wow-duration="1.6s" data-wow-duration="1.6s">Education</h5>
             
-                  <ul class="collapsible wow slideInUp"  data-wow-duration="1.8s" data-wow-duration="1.8s" data-collapsible="accordion">
+                  <ul class="collapsible wow slideInUp z-depth-2"  data-wow-duration="1.8s" data-wow-duration="1.8s" data-collapsible="accordion">
                     <li>
-                      <div class="collapsible-header active"><i class="material-icons">filter_drama</i>Education</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                      <div class="  purple-text darken-4 collapsible-header active"><i class="fa fa-graduation-cap" aria-hidden="true"></i>University of Central Florida: 2014-Current</div>
+                      <div class="collapsible-body"><span> Currently in my final year at (UCF) University of Central Florida in Orlando, FL <br> Degree: B.A in Digital Media, Web Design <br>Expected Dec. 2017</span></div>
                     </li>
                     <li>
-                      <div class="collapsible-header"><i class="material-icons">place</i>Accomplishments</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                      <div class="collapsible-header"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Seminole State College: 2013-2014</div>
+                      <div class="collapsible-body"><span>Seminole State College Sanford, FL <br> Completed Degree: Associate Degree in Digital Media <br>2013-2014</span></div>
                     </li>
                     <li>
-                      <div class="collapsible-header"><i class="material-icons">whatshot</i>Work Experience</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                      <div class="collapsible-header"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Middle Tennessee State University</div>
+                      <div class="collapsible-body"><span>Middle Tennessee State University <br>Degree: Digital Media <br>2010-2013</span></div>
                     </li>
                   </ul>
                 </div>
                 <div class="col s12 m6 l6" >
                   <h5 class="center-align wow slideInRight"  data-wow-duration="2.3s" data-wow-duration="2.3s">Accomplishments</h5>
-                  <ul class="collapsible wow slideInUp"  data-wow-duration="2s" data-wow-duration="2s" data-collapsible="accordion">
+                  <ul class="collapsible wow slideInUp z-depth-2"  data-wow-duration="2s" data-wow-duration="2s" data-collapsible="accordion">
                     <li>
-                      <div class="collapsible-header active"><i class="material-icons">filter_drama</i>Accomplishments</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                      <div class=" purple-text darken-4 collapsible-header active"><i class="fa fa-trophy" aria-hidden="true"></i>Presented website at “UCF Celebrate the Arts” :2016</div>
+                      <div class="collapsible-body"><span>Presented "ExpandedThinking" Website at Dr. Phillips performing Arts
+                    Center at the “UCF Celebrate the Arts” Showcasing a problem solving
+                    application. Using vanilla HTML, CSS3 and Java-script.</span></div>
                     </li>
                     <li>
-                      <div class="collapsible-header"><i class="material-icons">place</i>Accomplishments</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                      <div class="collapsible-header"><i class="fa fa-trophy" aria-hidden="true"></i>Created apps from concept to deployment: 2016-current</div>
+                      <div class="collapsible-body"><span>Created web applications from the ground up to working prototype then finally into website design for class project.</span></div>
                     </li>
                     <li>
-                      <div class="collapsible-header"><i class="material-icons">whatshot</i>Work Experience</div>
-                      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                      <div class="collapsible-header"><i class="fa fa-trophy" aria-hidden="true"></i>Mastered Audio for Award Winning Artists: 2011-Current</div>
+                      <div class="collapsible-body"><span>5+ years of producing, mixing and mastering music for award-winning
+                      recording artists and musicians.Dealt with numerous artist clients at one time with deadlines.</span></div>
                     </li>
                   </ul>
                 </div>
         </div>    
     </div>
+     
+     
+
+    
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
         (function (b, o, i, l, e, r) {
@@ -212,6 +217,7 @@
     <!-- endbuild -->
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
     <!-- endbuild -->
 </body>
 

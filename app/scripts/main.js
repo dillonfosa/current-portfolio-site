@@ -3,6 +3,7 @@ $( document ).ready(function(){
     $('.button-collapse').sideNav();
     
      new WOW().init();
+        
   
 });
 
@@ -43,48 +44,177 @@ $(document).ready(function(){
 
 
 
+//d3 chart HTML5
 
 
-var data = [16695, 18533];
 
-var bar_w = 55,
-    bar_h = 250,
-    label_padding = 26,
-    bar_padding = 25;
-  
-var x = d3.scale.linear()
-      .domain([0, 1])
-      .range([0, bar_w + bar_padding]);
-  
-var y = d3.scale.linear()
-       .domain([0, d3.max(data)])
-       .rangeRound([0, bar_h - label_padding]); // rangeRound to avoid antialiasing artifacts.
+var percent = .89; // 0.0 to 1.0
+var text = "HTML5"+ - (percent * 100) + "%";
 
-var chart = d3.select("#chart").append("svg")
-     .attr("class", "chart")
-     .attr("width", (bar_w * data.length) + bar_padding)
-     .attr("height", bar_h);
+var width = 130;
+var height = 130;
+var thickness = 10;
+var duration = 2000;
+var foregroundColor = "#ab0cdb";
+var backgroundColor = "#ccc";
 
-chart.selectAll("rect")
- .data(data)
- .enter()
- .append("rect")
- .attr("x", function(d, i) { return x(i) - .5; })
- .attr("y", function(d) { return bar_h - .5; })
- .attr("width", bar_w)
- .attr("class", function(d,i) {return i==0?'first':'second'})
- .transition().delay(function (d,i){ return i * 600;})
- .duration(800)
- .attr("height", function(d) { return y(d); })
- .attr("y", function(d) { return bar_h - y(d) - .5; });
+var radius = Math.min(width, height) / 2;
+var color = d3.scaleOrdinal([foregroundColor, backgroundColor]);
 
-chart.selectAll("text")
- .data(data)
- .enter().append("text")
- .attr("width", bar_w)
- .attr("x", function(d, i) { return x(i) + bar_w/2; })
- .attr("y", function(d) { return bar_h - y(d) - 15; })
- .attr("text-anchor", "middle")
- .transition().delay(function (d,i){ return i * 600;})
- .duration(800)
- .text(function(d) { return '$' + d; });
+var svg = d3.select("#chart")
+.append('svg')
+.attr('class', 'pie')
+.attr('width', width)
+.attr('height', height);
+
+var g = svg.append('g')
+.attr('transform', 'translate(' + (width/2) + ',' + (height/2) + ')');
+
+var arc = d3.arc()
+.innerRadius(radius - thickness)
+.outerRadius(radius);
+
+var pie = d3.pie()
+.sort(null);
+
+var path = g.selectAll('path')
+.data(pie([0, 1]))
+.enter()
+.append('path')
+.attr('d', arc)
+.attr('fill', function(d, i) {
+  return color(i);
+})
+.each(function(d) { this._current = d; });
+
+
+path.data(pie([percent, 1-percent])).transition()
+  .duration(duration)
+  .attrTween('d', function(d) {
+  var interpolate = d3.interpolate(this._current, d);
+  this._current = interpolate(0);
+  return function(t) {
+    return arc(interpolate(t));
+  }
+});
+
+g.append('text')
+  .attr('text-anchor', 'middle')
+  .attr('dy', '.35em')
+  .text(text);
+
+
+//d3 chart CSS3
+
+var percent = .83; // 0.0 to 1.0
+var text = "CSS3"+-(percent * 100) + "%";
+
+var width = 130;
+var height = 130;
+var thickness = 10;
+var duration = 2500;
+var foregroundColor = "#ab0cdb";
+var backgroundColor = "#ccc";
+
+var radius = Math.min(width, height) / 2;
+var color = d3.scaleOrdinal([foregroundColor, backgroundColor]);
+
+var svg = d3.select("#chart")
+.append('svg')
+.attr('class', 'pie')
+.attr('width', width)
+.attr('height', height);
+
+var g = svg.append('g')
+.attr('transform', 'translate(' + (width/2) + ',' + (height/2) + ')');
+
+var arc = d3.arc()
+.innerRadius(radius - thickness)
+.outerRadius(radius);
+
+var pie = d3.pie()
+.sort(null);
+
+var path = g.selectAll('path')
+.data(pie([0, 1]))
+.enter()
+.append('path')
+.attr('d', arc)
+.attr('fill', function(d, i) {
+  return color(i);
+})
+.each(function(d) { this._current = d; });
+
+
+path.data(pie([percent, 1-percent])).transition()
+  .duration(duration)
+  .attrTween('d', function(d) {
+  var interpolate = d3.interpolate(this._current, d);
+  this._current = interpolate(0);
+  return function(t) {
+    return arc(interpolate(t));
+  }
+});
+
+g.append('text')
+  .attr('text-anchor', 'middle')
+  .attr('dy', '.35em')
+  .text(text);
+
+
+//d3 chart JQUERY
+
+var percent = .65; // 0.0 to 1.0
+var text = "JQUERY"+-(percent * 100) + "%";
+
+var width = 130;
+var height = 130;
+var thickness = 10;
+var duration = 750;
+var foregroundColor = "#ab0cdb";
+var backgroundColor = "#ccc";
+
+var radius = Math.min(width, height) / 2;
+var color = d3.scaleOrdinal([foregroundColor, backgroundColor]);
+
+var svg = d3.select("#chart")
+.append('svg')
+.attr('class', 'pie')
+.attr('width', width)
+.attr('height', height);
+
+var g = svg.append('g')
+.attr('transform', 'translate(' + (width/2) + ',' + (height/2) + ')');
+
+var arc = d3.arc()
+.innerRadius(radius - thickness)
+.outerRadius(radius);
+
+var pie = d3.pie()
+.sort(null);
+
+var path = g.selectAll('path')
+.data(pie([0, 1]))
+.enter()
+.append('path')
+.attr('d', arc)
+.attr('fill', function(d, i) {
+  return color(i);
+})
+.each(function(d) { this._current = d; });
+
+
+path.data(pie([percent, 1-percent])).transition()
+  .duration(duration)
+  .attrTween('d', function(d) {
+  var interpolate = d3.interpolate(this._current, d);
+  this._current = interpolate(0);
+  return function(t) {
+    return arc(interpolate(t));
+  }
+});
+
+g.append('text')
+  .attr('text-anchor', 'middle')
+  .attr('dy', '.35em')
+  .text(text);
