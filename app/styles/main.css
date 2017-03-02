@@ -56,7 +56,8 @@ nav ul li a.active {
 }
 
 .works-btn{
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left: 20px;
 }
 
 .ctas{
@@ -70,7 +71,47 @@ nav ul li a.active {
     
 }
 
+.headshot{
+    margin-left: 150px;
+    margin-top:-15px;
+    border-radius: 50%;
+}
 
+
+
+.gradientbg{
+    
+
+
+background: #232526; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #232526 , #414345); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #232526 , #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        
+    
+}
+
+.socialicon{
+    -webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+}
+
+.socialicon:hover{
+   color: rgba(171, 12, 219, 0.87);
+}
+
+.emailme{
+    font-size: 21px;
+    font-style: italic;
+}
+
+.whoami{
+    font-family: 'Roboto Mono', monospace;
+    font-style: italic;
+}
 
 h3{
     font-size: 52px;
@@ -143,6 +184,23 @@ transform: scale(1.1);
 .group {
     cursor: pointer;
 }
+
+
+.downloadbtn {
+    font-size: 14px;
+}
+
+.downloadbtn:hover{
+    color: #4b86ea;
+}
+
+
+/*back to the top*/
+
+
+
+
+
 
 
 
