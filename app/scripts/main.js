@@ -57,19 +57,19 @@ $(document).ready(function(){
 
 
 var percent = .89; // 0.0 to 1.0
-var text = "HTML5"+ - (percent * 100) + "%";
+var text = 'HTML5'+ - (percent * 100) + '%';
 
 var width = 130;
 var height = 130;
 var thickness = 10;
 var duration = 2000;
-var foregroundColor = "#ab0cdb";
-var backgroundColor = "#ccc";
+var foregroundColor = '#ab0cdb';
+var backgroundColor = '#ccc';
 
 var radius = Math.min(width, height) / 2;
 var color = d3.scaleOrdinal([foregroundColor, backgroundColor]);
 
-var svg = d3.select("#chart")
+var svg = d3.select('#chart')
 .append('svg')
 .attr('class', 'pie')
 .attr('width', width)
@@ -115,19 +115,19 @@ g.append('text')
 //d3 chart CSS3
 
 var percent = .83; // 0.0 to 1.0
-var text = "CSS3"+-(percent * 100) + "%";
+var text = 'CSS3'+-(percent * 100) + '%';
 
 var width = 130;
 var height = 130;
 var thickness = 10;
 var duration = 2500;
-var foregroundColor = "#ab0cdb";
-var backgroundColor = "#ccc";
+var foregroundColor = '#ab0cdb';
+var backgroundColor = '#ccc';
 
 var radius = Math.min(width, height) / 2;
 var color = d3.scaleOrdinal([foregroundColor, backgroundColor]);
 
-var svg = d3.select("#chart")
+var svg = d3.select('#chart')
 .append('svg')
 .attr('class', 'pie')
 .attr('width', width)
@@ -173,19 +173,19 @@ g.append('text')
 //d3 chart JQUERY
 
 var percent = .65; // 0.0 to 1.0
-var text = "JQUERY"+-(percent * 100) + "%";
+var text = 'JQUERY'+-(percent * 100) + '%';
 
 var width = 130;
 var height = 130;
 var thickness = 10;
 var duration = 750;
-var foregroundColor = "#ab0cdb";
-var backgroundColor = "#ccc";
+var foregroundColor = '#ab0cdb';
+var backgroundColor = '#ccc';
 
 var radius = Math.min(width, height) / 2;
 var color = d3.scaleOrdinal([foregroundColor, backgroundColor]);
 
-var svg = d3.select("#chart")
+var svg = d3.select('#chart')
 .append('svg')
 .attr('class', 'pie')
 .attr('width', width)
@@ -228,3 +228,51 @@ g.append('text')
   .text(text);
 
 
+//quote slider
+
+var theSlide = 2,
+    numSlides = 4,
+    frequency = 5000,
+    lastButton = "#quote-1";
+
+var slide = function(){
+    var	currentSlide = "#quote-"+theSlide+"-content",
+				lastSlide = lastButton+"-content",
+        currentButton = "#quote-"+theSlide;
+
+    $(".slider-quote").removeClass("in-focus");
+    $(".quote-control").removeClass("selected");
+    $(currentSlide).addClass("in-focus");
+    $(currentButton).addClass("selected");
+
+
+    lastButton = currentButton;
+    if(theSlide < numSlides){
+        theSlide += 1;
+    }
+    else{
+        theSlide = 1;
+    }
+};
+
+var interval = setInterval(slide, frequency);
+
+$(function(){
+
+    $("div#quote-slider").mouseover(function(){
+        clearInterval(interval);
+    }).mouseout(function(){
+        interval = setInterval(slide, frequency);
+    });
+  
+  	$(".quote-control").click(function(e){
+      	clearInterval(interval);
+        $(".slider-quote").removeClass("in-focus");
+    		$(".quote-control").removeClass("selected");
+      	var quoteSlider = "#"+$(this).attr("id")+"-content";
+      	$(quoteSlider).addClass("in-focus");
+      	$(this).addClass("selected");
+      	$("div#quote-slider").unbind('mouseover mouseout');
+    });
+
+});
