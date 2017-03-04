@@ -126,7 +126,7 @@ hr {
 
 
 a{
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -198,61 +198,23 @@ transform: scale(1.1);
     margin: 5px;
 }
 
-/*quote slides*/
 
-.fixedwidth{
-  min-width: 200px;
-}
-
-#quote-slider{
-    height: 200px;
-    box-sizing: border-box;
-    position: relative;
-    max-width:100%;
-    overflow: hidden;
-}
-.quote{
-    position: relative;
-}
-.slider-quote {
-    transition: 1.3s;
-    position:absolute;
-    top: 0;
-    left: -250%;
-    font-size: 14px;
-    font-family: 'Roboto Mono', monospace;
-    line-height: 1.25;
-    min-width: 100%;
-}
-.slider-quote span{
-    font-size: 14px;
-}
-.controls {
-    padding: 0 3px;
-    position: absolute;
-    top: 70px;
-}
-.quote-control{
-    margin-top: 5px;
-    display: inline-block;
-    height: 8px;
-    width: 8px;
-    background-color: transparent;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    margin-right: 8px;
-}
-.selected{
-    background-color: rgba(2555,255,255,.3);
-}
-.in-focus{
-    transition: 1.3s;
-    left:0;
-}
 
 .thanks{
     margin-top: -34px;
 }
+
+.footer-nav li a{
+    font-size: 14px;
+    
+}
+
+.footer-nav li a:hover{
+    color: white;
+    
+}
+
+
 
 .page{
   margin:0 auto;
@@ -347,6 +309,8 @@ transform: scale(1.1);
         text-align: center;
     }    
     
+    
+    
 }
     
 
@@ -360,4 +324,45 @@ margin: 15px;
   font-size: 1em;
   font-family: "Verdana";
   fill: #888;
+}
+
+
+
+
+/* utopian hotels page styles*/
+
+.greycloudbg{
+    padding-top: 30px;
+    height: 800px;
+background: #1A2980; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #00bcd4 , #035e93); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #00bcd4 , #035e93); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        
+}
+
+.theidea{
+    margin-top: 30px;
+}
+
+.color1{
+    border: 1px solid black;
+    height: 64px;
+    width: 64px;
+    background-color: #e65100;
+}
+
+.color2{
+    border: 1px solid black;
+    height: 64px;
+    width: 64px;
+    background-color: #e65100;
+}
+
+.rightphone{
+    margin-left: 30px;
+}
+
+.middlephone{
+    margin-left: 25px;
 }
