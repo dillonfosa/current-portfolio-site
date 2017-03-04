@@ -1,6 +1,7 @@
 $( document ).ready(function(){
     
    
+    //custom slide out nav
     
      $('.button-collapse').sideNav({
       menuWidth: 300, // Default is 300
@@ -18,6 +19,7 @@ $( document ).ready(function(){
 
 
 
+//header switch words js logic altered from Siamon Hasan 
 
 function switchClass(i) {
    var lis = $('#home-news > div');
@@ -33,6 +35,8 @@ function switchClass(i) {
 $(window).load(function() {
    switchClass(-1);
 });
+
+//smooth scrolling functionality 
 
 $('a[href^="#"]').on('click', function(event) {
     var target = $(this.getAttribute('href'));
@@ -52,7 +56,7 @@ $(document).ready(function(){
 
 
 
-//d3 chart HTML5
+//d3 chart HTML5 JQUERY main code sorce altered from CAPTAIN ANONYMOUS on codepen.io 
 
 
 
@@ -170,7 +174,7 @@ g.append('text')
   .text(text);
 
 
-//d3 chart JQUERY
+//d3 chart JQUERY main code sorce altered from CAPTAIN ANONYMOUS on codepen.io 
 
 var percent = .65; // 0.0 to 1.0
 var text = 'JQUERY'+-(percent * 100) + '%';
