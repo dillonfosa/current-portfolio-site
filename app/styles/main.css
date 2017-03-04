@@ -121,7 +121,7 @@ h3{
 hr {
 
     width: 320px;
-    border-color: #0089ec;
+    border-color: black;
 }
 
 
@@ -179,7 +179,10 @@ transform: scale(1.1);
     background-color: white;
     margin-top: -20px;
 }
-
+.wht-bg3{
+    background-color: #e2e2e2;
+    margin-top: -20px;
+}
 
 .group {
     cursor: pointer;
@@ -340,6 +343,19 @@ background: linear-gradient(to left, #00bcd4 , #035e93); /* W3C, IE 10+/ Edge, F
         
         
 }
+
+.trkdtekbg{
+    padding-top: 30px;
+    height: 800px;
+
+
+background: #0099F7; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #bf212e , #03658c); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #bf212e , #03658c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        
+}
+
 
 .theidea{
     margin-top: 30px;
