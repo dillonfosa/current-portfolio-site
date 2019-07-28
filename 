@@ -1,0 +1,65 @@
+[33mcommit 3fd38cabc11d5712412b79ef03614651a1d5e693[m
+Author: Dillon Fosa <dillonfosa@gmail.com>
+Date:   Fri Mar 2 17:24:49 2018 -0500
+
+    made new informational tweaks
+
+[33mcommit b20c9b7399a10a922e80c783ccdf50351f11ac59[m
+Author: Dillon Fosa <dillonfosa@gmail.com>
+Date:   Sat Mar 4 04:03:22 2017 -0500
+
+    added rareandthrifted-site and corrected styling for view site. All links updated
+
+[33mcommit 246fdef398b1213b767e5b4092d3961c09239dcd[m
+Author: Dillon Fosa <dillonfosa@gmail.com>
+Date:   Sat Mar 4 01:00:53 2017 -0500
+
+    added new work trkd-tek-site and fixed back and next buttons
+
+[33mcommit cd76cc6e3f50bc655ecaf99f8aa4324ca7c51ed2[m
+Author: Dillon Fosa <dillonfosa@gmail.com>
+Date:   Fri Mar 3 20:01:40 2017 -0500
+
+    added utopian-hotels details and adjusted footer nav
+
+[33mcommit 910ebdb01680943ff7936125ffa6d6dd39925f2b[m
+Author: Dillon Fosa <dillonfosa@gmail.com>
+Date:   Fri Mar 3 01:13:38 2017 -0500
+
+    added quote slider and adjusted footer
+
+[33mcommit 38be9e30e579d31ce962a8603d04c1407f93ca46[m
+Author: Dillon Fosa <dillonfosa@gmail.com>
+Date:   Thu Mar 2 17:06:50 2017 -0500
+
+    added content to contact and footer
+
+[33mcommit ba5523f16362f45e5ef4d8c493f9d6963013ace7[m
+Author: Dillon Fosa <dillonfosa@gmail.com>
+Date:   Tue Feb 28 19:27:46 2017 -0500
+
+    added new content to resume sections
+
+[33mcommit 830d44dfcbbbe1471d1fed0a0137dd38a3c3a231[m
+Author: Dillon Fosa <dillonfosa@gmail.com>
+Date:   Sun Feb 26 00:37:04 2017 -0500
+
+    added new images in cards, smooth scroll, resume section
+
+[33mcommit a9016ce6cdc01b3839539e514329cfa7a23b4717[m
+Author: Dillon Fosa <dillonfosa@gmail.com>
+Date:   Mon Feb 20 14:17:33 2017 -0500
+
+    added wowjs and changed nav styles
+
+[33mcommit 5f51532da7033124a58cfb900537ae122a141477[m
+Author: Dillon Fosa <dillonfosa@gmail.com>
+Date:   Sun Feb 19 19:45:30 2017 -0500
+
+    added header headline effect and my work section
+
+[33mcommit b936c516c8032a4a5a0aa99d0a4c85ca98e15f84[m
+Author: Dillon Fosa <dillonfosa@gmail.com>
+Date:   Mon Feb 13 14:03:11 2017 -0500
+
+    first commit
